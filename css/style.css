@@ -1,1 +1,63 @@
-/* Här skrivs all din CSS */
+body{
+    margin: 10px;
+}
+
+
+div.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 10vh 10vh 150vh 10vh;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-areas: 
+    "hd nv nv"
+    "rb rb rb"
+    "ar1 ar1 as1"
+    "fo fo fo";
+}
+
+header{
+    display: flex;
+    grid-area: hd;
+    background-color: aqua;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav{
+    grid-area: nv;
+    background-color: cadetblue;
+}
+
+div.rubrik{
+    grid-area: rb;
+    background-color: lime;
+}
+
+article{
+    grid-area: ar1;
+    background-color: coral;
+}
+
+aside{
+    grid-area: as1;
+    background-color: cornflowerblue;
+}
+
+footer{
+    grid-area: fo;
+    background-color: yellow;
+}
+
+.button{
+    background-color: #1D5F7D;
+    text-decoration: none;
+    padding: 15px 30px;
+    border: solid 5px #1D5F7D;
+    border-bottom: 10px solid #323C4F;
+    border-top: 5px solid #1C8787;
+    border-radius: 20px;
+    color: black;
+    font-size: 24px;
+}
